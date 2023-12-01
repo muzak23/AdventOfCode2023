@@ -9,7 +9,7 @@ for line in lines:
         if char.isdigit():
             nums.append(int(char))
     if len(nums) == 1:
-        value += int(nums[0]*11)
+        value += nums[0]*11
     elif len(nums) > 1:
-        value += int(nums[0])*10+int(nums[-1])
+        value += nums[0]*10+nums[-1]
 print(value)
